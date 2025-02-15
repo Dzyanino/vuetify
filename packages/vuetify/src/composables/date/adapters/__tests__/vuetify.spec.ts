@@ -1,5 +1,4 @@
 // Utilities
-import { describe, expect, it } from '@jest/globals'
 import timezoneMock from 'timezone-mock'
 import { VuetifyDateAdapter } from '../vuetify'
 
@@ -67,7 +66,7 @@ describe('vuetify date adapter', () => {
   })
 
   // TODO: why do these only fail locally
-  describe.skip('getPreviousMonth', () => {
+  describe.todo('getPreviousMonth', () => {
     const dateUtils = new VuetifyDateAdapter({ locale: 'en-us' })
 
     it.each([
@@ -85,7 +84,7 @@ describe('vuetify date adapter', () => {
   })
 
   // TODO: why do these only fail locally
-  describe.skip('isSameYear', () => {
+  describe.todo('isSameYear', () => {
     const dateUtils = new VuetifyDateAdapter({ locale: 'en-us' })
 
     it.each([
